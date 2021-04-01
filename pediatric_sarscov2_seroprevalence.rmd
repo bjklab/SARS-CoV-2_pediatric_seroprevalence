@@ -1,0 +1,653 @@
+---
+title: "Pediatric SARS-CoV-2 Seroprevalence"
+subtitle: "<hr>"
+author: "Brendan J. Kelly, MD, MS"
+institute: "Infectious Diseases & Epidemiology" 
+date: "`r format(Sys.Date(), '%d %B %Y')`"
+output:
+  xaringan::moon_reader:
+    #css: ["bjk_xaringan.css",default-fonts]
+    css: xaringan-themer-blue-grids-fade.css
+    lib_dir: libs
+    chakra: libs/remark-latest.min.js
+    seal: false
+    nature:
+      ratio: 16:9
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: "%current%"
+
+---
+exclude: true
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+xaringan::summon_remark()
+```
+
+```{r xaringan-tile-view, echo=FALSE, message=FALSE, error=FALSE, include=FALSE, comment=FALSE}
+xaringanExtra::use_tile_view()
+xaringanExtra::use_webcam()
+xaringanExtra::use_tachyons()
+xaringanExtra::use_animate_css()
+xaringanExtra::use_share_again()
+```
+
+---
+class: top left hide-count
+background-image: url(img/sarscov2_cdc_blur.png)
+background-size: cover
+
+.fade-in[
+# <span style='color:white'>Pediatric SARS-CoV-2 Seroprevalence</span>
+]
+.fade-in[
+.callout-url-leftcorner[
+<span style='font-size:0.75em;font-weight:bold;color:white'>
+Brendan J. Kelly, MD, MS  
+Infectious Diseases & Epidemiology  
+University of Pennsylvania  
+</span>
+<span style='font-size:0.5em;font-weight:bold;color:white;'>
+`r format(Sys.Date(), '%d %B %Y')`
+</span>
+]
+]
+
+
+---
+background-image: url(img/tonshoff_title.png)
+background-size: 80%
+background-position: 50% 40%
+
+
+---
+
+## What to make of SARS-CoV-2 antibodies in kids?      
+  
+.pad-left[
+- Seroprevalence studies are important & and <u>hard to do in kids</u> 
+
+    - asymptomatic disease is more common among kids than adults
+    
+    - systematic under-reporting of pediatric cases  
+
+    - implications for 🔥hotly🔥 debated policy decisions 🏫    
+
+]
+
+---
+## What to make of SARS-CoV-2 antibodies in kids?      
+  
+.pad-left[
+- Context is everything:  
+
+    - rapidly evolving & spatially heterogeneous pandemic  
+    
+    - school policies have large effects on kids' mobility  
+
+- **Explicit causal/process models** are essential:  
+
+     - how do we interpret conflicting studies of pediatric populations?  
+     
+     - how might different causal models account for observations?  
+     
+]
+
+
+
+
+---
+class: full-screen hide-count
+
+<div class="grid-3-1">
+<div class="extension-tile gridset-a animated flipInY"><div>Tönshoff B<br>et al<br>Findings</div></div>
+</div>
+
+
+---
+layout: false
+class: full-screen hide-count
+
+<div class="grid-3-1">
+<div class="extension-tile gridset-a"><div>Tönshoff B<br>et al<br>Findings</div></div>
+<div class="extension-tile gridset-b animated flipInX"><div>Parallel<br>Studies</div></div>
+</div>
+
+
+---
+layout: false
+class: full-screen hide-count
+
+<div class="grid-3-1">
+<div class="extension-tile gridset-a"><div>Tönshoff B<br>et al<br>Findings</div></div>
+<div class="extension-tile gridset-b"><div>Parallel<br>Studies</div></div>
+<div class="extension-tile gridset-c animated bounceInDown"><div>What Causes<br>SARS-CoV-2<br>Spread?</div></div>
+</div>
+
+
+
+---
+exclude: true
+layout: false
+class: full-screen hide-count
+
+<div class="grid-3-2">
+<div class="extension-tile gridset-a"><div>Case from 1981</div></div>
+<div class="extension-tile gridset-b"><div>Prevalence</div></div>
+<div class="extension-tile gridset-c"><div>Incidence</div></div>
+<div class="extension-tile gridset-d animated fadeInRight"><div>Inference from<br>Exposures &<br>Outcomes</div></div>
+<div class="extension-tile gridset-e animated bounceInUp"><div>Relative Risk<br>&<br>Odds Ratios</div></div>
+<div class="extension-tile gridset-f animated slideInLeft"><div>Data Types<br>&<br>Distributions</div></div>
+</div>
+
+
+
+---
+exclude: true
+class: full-screen hide-count
+
+<div class="grid-3-2">
+<div class="extension-tile gridset-a animated flipInY"><div>Case from 1981</div></div>
+<div class="extension-tile gridset-b animated flipInX"><div>Prevalence</div></div>
+<div class="extension-tile gridset-c animated flipInY"><div>Incidence</div></div>
+<div class="extension-tile gridset-d animated flipInX"><div>Inference from<br>Exposures &<br>Outcomes</div></div>
+<div class="extension-tile gridset-e animated flipInY"><div>Relative Risk<br>&<br>Odds Ratios</div></div>
+<div class="extension-tile gridset-f animated flipInX"><div>Data Types<br>&<br>Distributions</div></div>
+</div>
+
+
+
+---
+layout: false
+class: full-screen hide-count
+
+<div class="grid-3-1">
+<div class="extension-tile gridset-a"><div>Tönshoff B<br>et al<br>Findings</div></div>
+<div class="extension-tile gridset-grey"><div>Parallel<br>Studies</div></div>
+<div class="extension-tile gridset-grey"><div>What Causes<br>SARS-CoV-2<br>Spread?</div></div>
+</div>
+
+
+
+---
+
+## Population Studied          
+
+.pad-left[
+  
+- Southwest Germany April-May 2020  
+  
+    - Freiburg, Heidelberg, Tübingen, and Ulm    
+    
+    - enrollment April 22 to May 15, 2020  
+    
+- inclusion: child 1-10 years, live with parent in state of Baden-Württemberg  
+
+- exclusion: severe congenital disease, immunodeficiency, <u>prior known COVID-19</u>  
+ 
+- <u>schools closed except "exceptional child care" (580 / 2443 = 24%)</u>    
+  
+]
+
+
+
+---
+
+## Cross-Sectional Study Design  
+  
+.pad-left[
+  
+- 2482 adult-child pairs  
+  
+- primary analysis: mixed effects logistic regression (Model 1):   
+
+    $${positive} \sim Bernoulli(p)$$
+    $$logit(p) = \beta_{parent} \cdot parent + \alpha + \alpha_{family} + \epsilon$$  
+  
+- secondary analyses (Models 2 & 3):  
+
+    $${positive} \sim \beta_{parent} \cdot parent + \beta_{young} \cdot young + \alpha + \alpha_{family}$$  
+    
+    $${positive} \sim \beta_{parent} \cdot parent + \beta_{young} \cdot young + \beta_{siblings} \cdot siblings \\ + \beta_{sex} \cdot sex + \beta_{daycare} \cdot daycare + \beta_{contact} \cdot contact + \alpha + \alpha_{family}$$
+    
+    
+]
+
+
+
+---
+
+## Seroprevalence in Adults & Kids  
+  
+.pad-left[
+  
+- 1.9% of adults seropositive  
+  
+- 0.9% of children seropositive  
+
+    - pre-school age (1-5 years): 0.8%  
+    
+    - school age (6-10 years): 1.0%  
+    
+    - attending childcare: 0.5%  
+    
+    - not attending childcare: 1.0%  
+  
+  
+]
+
+
+---
+
+## Comparing Adults & Kids  
+  
+.pad-left[
+  
+- "Model 1 yielded an estimated prevalence for children aged 1 to 10 years of 0.6% (95% CI, 0.3-1.0; Table 5). This estimated seroprevalence was 3-fold lower than in parents (1.8% [95% CI, 1.2-2.4])."
+  
+- "The lower SARS-CoV-2 seroprevalence in young children compared with their corresponding parent is an important observation, because <span style='background-color:lightyellow'>it indicates that children are very unlikely to have boosted the COVID-19 outbreak</span> in southwest Germany during the period of investigation."  
+
+- "<span style='background-color:lightyellow'>This contrasts with other respiratory tract infections, such as influenza or pneumococci, in which children can play a prominent role for the dissemination of the disease</span>. The higher frequency and proximity of social contacts of children are considered to be a major driver of virus transmission."<sup>1,2,3,4</sup>  
+  
+]
+
+.footnote[
+1 - Viboud C et al <u>ICS</u> 2004; 2 - Pedro PA et al <u>Vaccine</u> 2005; 3 - Caucehmez S <u>Nature</u> 2008;<br>4 - Mossong J et al <u>PLoS Medicine</u> 2008
+]
+
+---
+layout: false
+class: full-screen hide-count
+
+<div class="grid-3-1">
+<div class="extension-tile gridset-grey"><div>Tönshoff B<br>et al<br>Findings</div></div>
+<div class="extension-tile gridset-b animated flipInY"><div>Parallel<br>Studies</div></div>
+<div class="extension-tile gridset-grey"><div>What Causes<br>SARS-CoV-2<br>Spread?</div></div>
+</div>
+
+
+
+---
+
+## Other Pediatric Seroprevalence Studies        
+
+.pad-left[
+
+- Seroprevalence results vary according to location & phase of global pandemic<sup>1-3</sup>
+
+- United States:  
+
+   - St. Louis<sup>4</sup>: 1.7% kids, 3.1% adults  
+   
+   - Mississippi<sup>5</sup>: 14.5% <6mos, 14.3% 6-11mos, 9.9% 1-8yrs, 9.0% 9-17yrs  
+   
+   - "cumulative infection rates... among persons aged <18 years were similar to those among persons aged 18–49 years, the age group with the highest seroprevalence during the period"    
+  
+]
+
+.footnote[
+1 - Ismail et al _Lancet Infect Dis_ 2021; 2 - Wang et al _Pediatr Investig_ 2020; 3 - Roarty et al _Lancet Infect Dis_ 2020;<br>4 - Smith et al _mSphere_ 2021; 5 - Hobbs et al _MMWR_ 2021
+]
+
+
+---
+layout: false
+class: full-screen hide-count
+
+<div class="grid-3-1">
+<div class="extension-tile gridset-grey animated"><div>Tönshoff B<br>et al<br>Findings</div></div>
+<div class="extension-tile gridset-grey animated"><div>Parallel<br>Studies</div></div>
+<div class="extension-tile gridset-c animated flipInX"><div>What Causes<br>SARS-CoV-2<br>Spread?</div></div>
+</div>
+
+
+
+---
+  
+## Concerns About COVID-19 in Kids    
+  
+.pad-left[
+  
+- **Pediatric COVID-19 Disease**:  
+  
+    - mercifully, severe primary disease and MIS-C are rare    
+  
+- **Safety of Kid-Proximate Workers**:  
+  
+    - the in-person school debate<sup>1</sup>    
+    
+- **Contribution of Pediatric Population to Larger COVID-19 Spread**:  
+  
+    - impact of systematic under-reporting of pediatric cases?      
+    - how strong is your prior that kids spread viruses?    
+  
+]
+
+.footnote[
+1 - Gold JAW et al _MMWR_ 2021
+]
+
+---
+
+## Models for SARS-CoV-2 Spread        
+
+.pull-left[
+  
+- Implicit model for SARS-CoV-2 $R$:  
+
+    $$R_{t} \sim {age}_{t}$$   
+
+- Does age <u>mediate</u> SARS-CoV-2 spread?  
+  
+- What is the evidence for differences in individual viral load/shedding?  
+  
+- What is the evidence for an impact of age distribution on transmission events?  
+  
+]
+
+.pull-right[
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, error=FALSE, eval=TRUE}
+
+library(DiagrammeR)
+
+c_graph1 <-
+  create_graph() %>%
+  add_node(label = 'SARS-CoV-2\nToday', node_aes = node_aes(fontsize = 5, color = 'black', fillcolor = 'white', fontcolor = 'black')) %>%
+  add_node(label = '% Kids', node_aes = node_aes(fontsize = 5, color = 'black', fillcolor = 'white', fontcolor = 'black')) %>%
+    add_node(label = 'SARS-CoV-2\nTomorrow', node_aes = node_aes(fontsize = 5, color = 'black', fillcolor = 'white', fontcolor = 'black')) %>%
+  add_edge(from = 'SARS-CoV-2\nToday',to = '% Kids', edge_aes = edge_aes(color = 'black')) %>%
+  add_edge(from = '% Kids',to = 'SARS-CoV-2\nTomorrow', edge_aes = edge_aes(color = 'black')) %>%
+  set_node_position(node = 1, x = -0.5, y = 0.5) %>%
+  set_node_position(node = 2, x = 0, y = 0) %>%
+  set_node_position(node = 3, x = 0.5, y = -0.5)
+
+c_graph1 %>% render_graph(width = 400)
+
+
+```
+
+
+]
+
+
+---
+
+## Models for SARS-CoV-2 Spread        
+
+.pull-left[
+  
+- Implicit model for SARS-CoV-2 $R$:  
+
+    $$R_{t} \sim {age}_{t}$$   
+
+- Does age <u>mediate</u> SARS-CoV-2 spread?  
+  
+- What is the evidence for differences in individual viral load/shedding?  
+  
+- What is the evidence for an impact of age distribution on transmission events?  
+  
+  
+]
+
+.pull-right[
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, error=FALSE, eval=TRUE}
+
+library(DiagrammeR)
+
+c_graph2 <-
+  create_graph() %>%
+  add_node(label = 'SARS-CoV-2\nToday', node_aes = node_aes(fontsize = 5, color = 'black', fillcolor = 'white', fontcolor = 'black')) %>%
+  add_node(label = '% Kids', node_aes = node_aes(fontsize = 5, color = 'black', fillcolor = 'coral', fontcolor = 'black')) %>%
+    add_node(label = 'SARS-CoV-2\nTomorrow', node_aes = node_aes(fontsize = 5, color = 'black', fillcolor = 'lightcyan', fontcolor = 'black')) %>%
+  add_edge(from = 'SARS-CoV-2\nToday',to = '% Kids', edge_aes = edge_aes(color = 'black')) %>%
+  add_edge(from = '% Kids',to = 'SARS-CoV-2\nTomorrow', edge_aes = edge_aes(color = 'black')) %>%
+  set_node_position(node = 1, x = -0.5, y = 0.5) %>%
+  set_node_position(node = 2, x = 0, y = 0) %>%
+  set_node_position(node = 3, x = 0.5, y = -0.5)
+
+c_graph2 %>% render_graph(width = 400)
+
+
+```
+
+
+]
+
+
+---
+
+## Models for SARS-CoV-2 Spread        
+
+.pull-left[
+  
+- Implicit model for SARS-CoV-2 $R$:  
+
+    $$R_{t} \sim {age}_{t}$$   
+
+- Does age <u>mediate</u> SARS-CoV-2 spread?  
+  
+- What is the evidence for differences in individual viral load/shedding?  
+  
+- What is the evidence for an impact of age distribution on transmission events?  
+  
+  
+]
+
+.pull-right[
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, error=FALSE, eval=TRUE}
+
+library(DiagrammeR)
+
+c_graph3 <-
+  create_graph() %>%
+  add_node(label = 'SARS-CoV-2\nToday', node_aes = node_aes(fontsize = 5, color = 'black', fillcolor = 'white', fontcolor = 'black')) %>%
+  add_node(label = '% Kids', node_aes = node_aes(fontsize = 5, color = 'black', fillcolor = 'lightcyan', fontcolor = 'black')) %>%
+    add_node(label = 'SARS-CoV-2\nTomorrow', node_aes = node_aes(fontsize = 5, color = 'black', fillcolor = 'coral', fontcolor = 'black')) %>%
+  add_edge(from = 'SARS-CoV-2\nToday',to = '% Kids', edge_aes = edge_aes(color = 'black')) %>%
+  add_edge(from = '% Kids',to = 'SARS-CoV-2\nTomorrow', edge_aes = edge_aes(color = 'black')) %>%
+  set_node_position(node = 1, x = -0.5, y = 0.5) %>%
+  set_node_position(node = 2, x = 0, y = 0) %>%
+  set_node_position(node = 3, x = 0.5, y = -0.5)
+
+c_graph3 %>% render_graph(width = 400)
+
+
+```
+
+
+]
+
+
+---
+
+##Models for SARS-CoV-2 Spread        
+
+.pull-left[
+  
+- Alternative model for SARS-CoV-2 $R$:  
+
+    $$R_{t} \sim {community\ mobility}_{t}$$   
+  
+    $${community\ mobility}_{t} \sim {school\ policy}_{t}$$  
+  
+- Differences observed across age groups reflect differences in community mobility, which are impacted by school policy.
+  
+]
+
+.pull-right[
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, error=FALSE, eval=TRUE}
+
+library(DiagrammeR)
+
+c_graph4 <-
+  create_graph() %>%
+  add_node(label = 'SARS-CoV-2\nToday', node_aes = node_aes(fontsize = 5, color = 'black', fillcolor = 'white', fontcolor = 'black')) %>%
+  add_node(label = 'Community\nMobility', node_aes = node_aes(fontsize = 5, color = 'black', fillcolor = 'white', fontcolor = 'black')) %>%
+    add_node(label = 'SARS-CoV-2\nTomorrow', node_aes = node_aes(fontsize = 5, color = 'black', fillcolor = 'white', fontcolor = 'black')) %>%
+    add_node(label = 'School\nPolicy', node_aes = node_aes(fontsize = 5, color = 'black', fillcolor = 'white', fontcolor = 'black')) %>%
+  add_edge(from = 'SARS-CoV-2\nToday',to = 'Community\nMobility', edge_aes = edge_aes(color = 'black')) %>%
+  add_edge(from = 'Community\nMobility',to = 'SARS-CoV-2\nTomorrow', edge_aes = edge_aes(color = 'black')) %>%
+  add_edge(from = 'School\nPolicy',to = 'Community\nMobility', edge_aes = edge_aes(color = 'black')) %>%
+  #add_edge(from = 'School\nPolicy',to = 'SARS-CoV-2\nTomorrow', edge_aes = edge_aes(color = 'black')) %>%
+  set_node_position(node = 1, x = -0.5, y = 0.5) %>%
+  set_node_position(node = 2, x = 0, y = 0) %>%
+  set_node_position(node = 3, x = 0.5, y = -0.5) %>%
+  set_node_position(node = 4, x = 0.5, y = 0.5)
+
+c_graph4 %>% render_graph(width = 400)
+
+
+```
+
+
+]
+
+
+
+
+---
+
+##Models for SARS-CoV-2 Spread        
+
+.pull-left[
+  
+- Alternative model for SARS-CoV-2 $R$:  
+
+    $$R_{t} \sim {community\ mobility}_{t}$$   
+  
+    $${community\ mobility}_{t} \sim {school\ policy}_{t}$$   
+  
+- Differences observed across age groups reflect differences in community mobility, which are impacted by school policy.
+  
+]
+
+.pull-right[
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, error=FALSE, eval=TRUE}
+
+library(DiagrammeR)
+
+c_graph5 <-
+  create_graph() %>%
+  add_node(label = 'SARS-CoV-2\nToday', node_aes = node_aes(fontsize = 5, color = 'black', fillcolor = 'white', fontcolor = 'black')) %>%
+  add_node(label = 'Community\nMobility', node_aes = node_aes(fontsize = 5, color = 'black', fillcolor = 'lightcyan', fontcolor = 'black')) %>%
+    add_node(label = 'SARS-CoV-2\nTomorrow', node_aes = node_aes(fontsize = 5, color = 'black', fillcolor = 'lightcyan', fontcolor = 'black')) %>%
+    add_node(label = 'School\nPolicy', node_aes = node_aes(fontsize = 5, color = 'black', fillcolor = 'coral', fontcolor = 'black')) %>%
+  add_edge(from = 'SARS-CoV-2\nToday',to = 'Community\nMobility', edge_aes = edge_aes(color = 'black')) %>%
+  add_edge(from = 'Community\nMobility',to = 'SARS-CoV-2\nTomorrow', edge_aes = edge_aes(color = 'black')) %>%
+  add_edge(from = 'School\nPolicy',to = 'Community\nMobility', edge_aes = edge_aes(color = 'black')) %>%
+  #add_edge(from = 'School\nPolicy',to = 'SARS-CoV-2\nTomorrow', edge_aes = edge_aes(color = 'black')) %>%
+  set_node_position(node = 1, x = -0.5, y = 0.5) %>%
+  set_node_position(node = 2, x = 0, y = 0) %>%
+  set_node_position(node = 3, x = 0.5, y = -0.5) %>%
+  set_node_position(node = 4, x = 0.5, y = 0.5)
+
+c_graph5 %>% render_graph(width = 400)
+
+
+```
+
+
+]
+
+
+
+
+---
+
+##Models for SARS-CoV-2 Spread        
+
+.pull-left[
+  
+- Alternative model for SARS-CoV-2 $R$:  
+
+    $$R_{t} \sim {community\ mobility}_{t}$$   
+  
+    $${community\ mobility}_{t} \sim {school\ policy}_{t}$$   
+  
+- Differences observed across age groups reflect differences in community mobility, which are impacted by school policy.
+  
+]
+
+.pull-right[
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, error=FALSE, eval=TRUE}
+
+library(DiagrammeR)
+
+c_graph6 <-
+  create_graph() %>%
+  add_node(label = 'SARS-CoV-2\nToday', node_aes = node_aes(fontsize = 5, color = 'black', fillcolor = 'white', fontcolor = 'black')) %>%
+  add_node(label = 'Community\nMobility', node_aes = node_aes(fontsize = 5, color = 'black', fillcolor = 'coral', fontcolor = 'black')) %>%
+    add_node(label = 'SARS-CoV-2\nTomorrow', node_aes = node_aes(fontsize = 5, color = 'black', fillcolor = 'coral', fontcolor = 'black')) %>%
+    add_node(label = 'School\nPolicy', node_aes = node_aes(fontsize = 5, color = 'black', fillcolor = 'lightcyan', fontcolor = 'black')) %>%
+  add_edge(from = 'SARS-CoV-2\nToday',to = 'Community\nMobility', edge_aes = edge_aes(color = 'black')) %>%
+  add_edge(from = 'Community\nMobility',to = 'SARS-CoV-2\nTomorrow', edge_aes = edge_aes(color = 'black')) %>%
+  add_edge(from = 'School\nPolicy',to = 'Community\nMobility', edge_aes = edge_aes(color = 'black')) %>%
+  #add_edge(from = 'School\nPolicy',to = 'SARS-CoV-2\nTomorrow', edge_aes = edge_aes(color = 'black')) %>%
+  set_node_position(node = 1, x = -0.5, y = 0.5) %>%
+  set_node_position(node = 2, x = 0, y = 0) %>%
+  set_node_position(node = 3, x = 0.5, y = -0.5) %>%
+  set_node_position(node = 4, x = 0.5, y = 0.5)
+
+c_graph6 %>% render_graph(width = 400)
+
+
+```
+
+
+]
+
+
+
+---
+
+## Measurement Challenge ⇾ Model Parameters  
+  
+.pad-left[
+
+- Monod M et al. Age groups that sustain resurging COVID-19 epidemics in the United States. _Science_. 2021 Feb 2; PMID: 33531384  
+
+    - "at least 65 of 100 COVID-19 infections originate from individuals aged 20-49"
+
+    - Foursquare social mobility data: not available for 0-19 years  
+    
+    - COVID-19 infections underreported in pediatric population
+    
+    - "school opening is associated with an estimated 25.7% [14.5%-40.5%] increase of COVID-19 infections and a 5.9% [3.4%-9.3%] increase in COVID-19 attributable deaths"
+    
+    - **significantly greater if pediatric case numbers substantially underreported**  
+
+]
+
+---
+exclude: true
+layout: false
+class: full-screen hide-count
+
+<div class="grid-3-1">
+<div class="extension-tile gridset-a animated flipInX"><div>Tönshoff B<br>et al<br>Findings</div></div>
+<div class="extension-tile gridset-b animated flipInY"><div>Parallel<br>Studies</div></div>
+<div class="extension-tile gridset-c animated flipInX"><div>What Causes<br>SARS-CoV-2<br>Spread?</div></div>
+</div>
+
+
+---
+class: middle center hide-count
+background-image: url(img/sarscov2_cdc_blur.png)
+background-size: cover
+
+# <span style='color:white'>Questions?</span>
+
+ <!-- .callout-url-bottom[  
+.fade-in[<span style="font-size:0.5em; color:white">slides ↓ </span>]  
+<span style="link-color:white">[bjklab.org](http://www.bjklab.org)</span>  
+] --> 
+
+

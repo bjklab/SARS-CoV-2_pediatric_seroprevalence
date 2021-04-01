@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Pediatric SARS-CoV-2 Seroprevalence</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Brendan J. Kelly, MD, MS" />
+    <meta name="date" content="2021-03-31" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <script src="libs/xaringanExtra-webcam/webcam.js"></script>
+    <script id="xaringanExtra-webcam-options" type="application/json">{"width":"200","height":"200","margin":"1em"}</script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <link href="libs/animate.css/animate.xaringan.css" rel="stylesheet" />
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="libs/shareon/shareon.min.js"></script>
+    <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+    <script src="libs/htmlwidgets/htmlwidgets.js"></script>
+    <script src="libs/viz/viz.js"></script>
+    <link href="libs/DiagrammeR-styles/styles.css" rel="stylesheet" />
+    <script src="libs/grViz-binding/grViz.js"></script>
+    <link rel="stylesheet" href="xaringan-themer-blue-grids-fade.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+exclude: true
+
+
+
+
+
+---
+class: top left hide-count
+background-image: url(img/sarscov2_cdc_blur.png)
+background-size: cover
+
+.fade-in[
+# &lt;span style='color:white'&gt;Pediatric SARS-CoV-2 Seroprevalence&lt;/span&gt;
+]
+.fade-in[
+.callout-url-leftcorner[
+&lt;span style='font-size:0.75em;font-weight:bold;color:white'&gt;
+Brendan J. Kelly, MD, MS  
+Infectious Diseases &amp; Epidemiology  
+University of Pennsylvania  
+&lt;/span&gt;
+&lt;span style='font-size:0.5em;font-weight:bold;color:white;'&gt;
+31 March 2021
+&lt;/span&gt;
+]
+]
+
+
+---
+background-image: url(img/tonshoff_title.png)
+background-size: 80%
+background-position: 50% 40%
+
+
+---
+
+## What to make of SARS-CoV-2 antibodies in kids?      
+  
+.pad-left[
+- Seroprevalence studies are important &amp; and &lt;u&gt;hard to do in kids&lt;/u&gt; 
+
+    - asymptomatic disease is more common among kids than adults
+    
+    - systematic under-reporting of pediatric cases  
+
+    - implications for 🔥hotly🔥 debated policy decisions 🏫    
+
+]
+
+---
+## What to make of SARS-CoV-2 antibodies in kids?      
+  
+.pad-left[
+- Context is everything:  
+
+    - rapidly evolving &amp; spatially heterogeneous pandemic  
+    
+    - school policies have large effects on kids' mobility  
+
+- **Explicit causal/process models** are essential:  
+
+     - how do we interpret conflicting studies of pediatric populations?  
+     
+     - how might different causal models account for observations?  
+     
+]
+
+
+
+
+---
+class: full-screen hide-count
+
+&lt;div class="grid-3-1"&gt;
+&lt;div class="extension-tile gridset-a animated flipInY"&gt;&lt;div&gt;Tönshoff B&lt;br&gt;et al&lt;br&gt;Findings&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+---
+layout: false
+class: full-screen hide-count
+
+&lt;div class="grid-3-1"&gt;
+&lt;div class="extension-tile gridset-a"&gt;&lt;div&gt;Tönshoff B&lt;br&gt;et al&lt;br&gt;Findings&lt;/div&gt;&lt;/div&gt;
+&lt;div class="extension-tile gridset-b animated flipInX"&gt;&lt;div&gt;Parallel&lt;br&gt;Studies&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+---
+layout: false
+class: full-screen hide-count
+
+&lt;div class="grid-3-1"&gt;
+&lt;div class="extension-tile gridset-a"&gt;&lt;div&gt;Tönshoff B&lt;br&gt;et al&lt;br&gt;Findings&lt;/div&gt;&lt;/div&gt;
+&lt;div class="extension-tile gridset-b"&gt;&lt;div&gt;Parallel&lt;br&gt;Studies&lt;/div&gt;&lt;/div&gt;
+&lt;div class="extension-tile gridset-c animated bounceInDown"&gt;&lt;div&gt;What Causes&lt;br&gt;SARS-CoV-2&lt;br&gt;Spread?&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+---
+exclude: true
+layout: false
+class: full-screen hide-count
+
+&lt;div class="grid-3-2"&gt;
+&lt;div class="extension-tile gridset-a"&gt;&lt;div&gt;Case from 1981&lt;/div&gt;&lt;/div&gt;
+&lt;div class="extension-tile gridset-b"&gt;&lt;div&gt;Prevalence&lt;/div&gt;&lt;/div&gt;
+&lt;div class="extension-tile gridset-c"&gt;&lt;div&gt;Incidence&lt;/div&gt;&lt;/div&gt;
+&lt;div class="extension-tile gridset-d animated fadeInRight"&gt;&lt;div&gt;Inference from&lt;br&gt;Exposures &amp;&lt;br&gt;Outcomes&lt;/div&gt;&lt;/div&gt;
+&lt;div class="extension-tile gridset-e animated bounceInUp"&gt;&lt;div&gt;Relative Risk&lt;br&gt;&amp;&lt;br&gt;Odds Ratios&lt;/div&gt;&lt;/div&gt;
+&lt;div class="extension-tile gridset-f animated slideInLeft"&gt;&lt;div&gt;Data Types&lt;br&gt;&amp;&lt;br&gt;Distributions&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+---
+exclude: true
+class: full-screen hide-count
+
+&lt;div class="grid-3-2"&gt;
+&lt;div class="extension-tile gridset-a animated flipInY"&gt;&lt;div&gt;Case from 1981&lt;/div&gt;&lt;/div&gt;
+&lt;div class="extension-tile gridset-b animated flipInX"&gt;&lt;div&gt;Prevalence&lt;/div&gt;&lt;/div&gt;
+&lt;div class="extension-tile gridset-c animated flipInY"&gt;&lt;div&gt;Incidence&lt;/div&gt;&lt;/div&gt;
+&lt;div class="extension-tile gridset-d animated flipInX"&gt;&lt;div&gt;Inference from&lt;br&gt;Exposures &amp;&lt;br&gt;Outcomes&lt;/div&gt;&lt;/div&gt;
+&lt;div class="extension-tile gridset-e animated flipInY"&gt;&lt;div&gt;Relative Risk&lt;br&gt;&amp;&lt;br&gt;Odds Ratios&lt;/div&gt;&lt;/div&gt;
+&lt;div class="extension-tile gridset-f animated flipInX"&gt;&lt;div&gt;Data Types&lt;br&gt;&amp;&lt;br&gt;Distributions&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+---
+layout: false
+class: full-screen hide-count
+
+&lt;div class="grid-3-1"&gt;
+&lt;div class="extension-tile gridset-a"&gt;&lt;div&gt;Tönshoff B&lt;br&gt;et al&lt;br&gt;Findings&lt;/div&gt;&lt;/div&gt;
+&lt;div class="extension-tile gridset-grey"&gt;&lt;div&gt;Parallel&lt;br&gt;Studies&lt;/div&gt;&lt;/div&gt;
+&lt;div class="extension-tile gridset-grey"&gt;&lt;div&gt;What Causes&lt;br&gt;SARS-CoV-2&lt;br&gt;Spread?&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+---
+
+## Population Studied          
+
+.pad-left[
+  
+- Southwest Germany April-May 2020  
+  
+    - Freiburg, Heidelberg, Tübingen, and Ulm    
+    
+    - enrollment April 22 to May 15, 2020  
+    
+- inclusion: child 1-10 years, live with parent in state of Baden-Württemberg  
+
+- exclusion: severe congenital disease, immunodeficiency, &lt;u&gt;prior known COVID-19&lt;/u&gt;  
+ 
+- &lt;u&gt;schools closed except "exceptional child care" (580 / 2443 = 24%)&lt;/u&gt;    
+  
+]
+
+
+
+---
+
+## Cross-Sectional Study Design  
+  
+.pad-left[
+  
+- 2482 adult-child pairs  
+  
+- primary analysis: mixed effects logistic regression (Model 1):   
+
+    `$${positive} \sim Bernoulli(p)$$`
+    `$$logit(p) = \beta_{parent} \cdot parent + \alpha + \alpha_{family} + \epsilon$$`  
+  
+- secondary analyses (Models 2 &amp; 3):  
+
+    `$${positive} \sim \beta_{parent} \cdot parent + \beta_{young} \cdot young + \alpha + \alpha_{family}$$`  
+    
+    `$${positive} \sim \beta_{parent} \cdot parent + \beta_{young} \cdot young + \beta_{siblings} \cdot siblings \\ + \beta_{sex} \cdot sex + \beta_{daycare} \cdot daycare + \beta_{contact} \cdot contact + \alpha + \alpha_{family}$$`
+    
+    
+]
+
+
+
+---
+
+## Seroprevalence in Adults &amp; Kids  
+  
+.pad-left[
+  
+- 1.9% of adults seropositive  
+  
+- 0.9% of children seropositive  
+
+    - pre-school age (1-5 years): 0.8%  
+    
+    - school age (6-10 years): 1.0%  
+    
+    - attending childcare: 0.5%  
+    
+    - not attending childcare: 1.0%  
+  
+  
+]
+
+
+---
+
+## Comparing Adults &amp; Kids  
+  
+.pad-left[
+  
+- "Model 1 yielded an estimated prevalence for children aged 1 to 10 years of 0.6% (95% CI, 0.3-1.0; Table 5). This estimated seroprevalence was 3-fold lower than in parents (1.8% [95% CI, 1.2-2.4])."
+  
+- "The lower SARS-CoV-2 seroprevalence in young children compared with their corresponding parent is an important observation, because &lt;span style='background-color:lightyellow'&gt;it indicates that children are very unlikely to have boosted the COVID-19 outbreak&lt;/span&gt; in southwest Germany during the period of investigation."  
+
+- "&lt;span style='background-color:lightyellow'&gt;This contrasts with other respiratory tract infections, such as influenza or pneumococci, in which children can play a prominent role for the dissemination of the disease&lt;/span&gt;. The higher frequency and proximity of social contacts of children are considered to be a major driver of virus transmission."&lt;sup&gt;1,2,3,4&lt;/sup&gt;  
+  
+]
+
+.footnote[
+1 - Viboud C et al &lt;u&gt;ICS&lt;/u&gt; 2004; 2 - Pedro PA et al &lt;u&gt;Vaccine&lt;/u&gt; 2005; 3 - Caucehmez S &lt;u&gt;Nature&lt;/u&gt; 2008;&lt;br&gt;4 - Mossong J et al &lt;u&gt;PLoS Medicine&lt;/u&gt; 2008
+]
+
+---
+layout: false
+class: full-screen hide-count
+
+&lt;div class="grid-3-1"&gt;
+&lt;div class="extension-tile gridset-grey"&gt;&lt;div&gt;Tönshoff B&lt;br&gt;et al&lt;br&gt;Findings&lt;/div&gt;&lt;/div&gt;
+&lt;div class="extension-tile gridset-b animated flipInY"&gt;&lt;div&gt;Parallel&lt;br&gt;Studies&lt;/div&gt;&lt;/div&gt;
+&lt;div class="extension-tile gridset-grey"&gt;&lt;div&gt;What Causes&lt;br&gt;SARS-CoV-2&lt;br&gt;Spread?&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+---
+
+## Other Pediatric Seroprevalence Studies        
+
+.pad-left[
+
+- Seroprevalence results vary according to location &amp; phase of global pandemic&lt;sup&gt;1-3&lt;/sup&gt;
+
+- United States:  
+
+   - St. Louis&lt;sup&gt;4&lt;/sup&gt;: 1.7% kids, 3.1% adults  
+   
+   - Mississippi&lt;sup&gt;5&lt;/sup&gt;: 14.5% &lt;6mos, 14.3% 6-11mos, 9.9% 1-8yrs, 9.0% 9-17yrs  
+   
+   - "cumulative infection rates... among persons aged &lt;18 years were similar to those among persons aged 18–49 years, the age group with the highest seroprevalence during the period"    
+  
+]
+
+.footnote[
+1 - Ismail et al _Lancet Infect Dis_ 2021; 2 - Wang et al _Pediatr Investig_ 2020; 3 - Roarty et al _Lancet Infect Dis_ 2020;&lt;br&gt;4 - Smith et al _mSphere_ 2021; 5 - Hobbs et al _MMWR_ 2021
+]
+
+
+---
+layout: false
+class: full-screen hide-count
+
+&lt;div class="grid-3-1"&gt;
+&lt;div class="extension-tile gridset-grey animated"&gt;&lt;div&gt;Tönshoff B&lt;br&gt;et al&lt;br&gt;Findings&lt;/div&gt;&lt;/div&gt;
+&lt;div class="extension-tile gridset-grey animated"&gt;&lt;div&gt;Parallel&lt;br&gt;Studies&lt;/div&gt;&lt;/div&gt;
+&lt;div class="extension-tile gridset-c animated flipInX"&gt;&lt;div&gt;What Causes&lt;br&gt;SARS-CoV-2&lt;br&gt;Spread?&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+---
+  
+## Concerns About COVID-19 in Kids    
+  
+.pad-left[
+  
+- **Pediatric COVID-19 Disease**:  
+  
+    - mercifully, severe primary disease and MIS-C are rare    
+  
+- **Safety of Kid-Proximate Workers**:  
+  
+    - the in-person school debate&lt;sup&gt;1&lt;/sup&gt;    
+    
+- **Contribution of Pediatric Population to Larger COVID-19 Spread**:  
+  
+    - impact of systematic under-reporting of pediatric cases?      
+    - how strong is your prior that kids spread viruses?    
+  
+]
+
+.footnote[
+1 - Gold JAW et al _MMWR_ 2021
+]
+
+---
+
+## Models for SARS-CoV-2 Spread        
+
+.pull-left[
+  
+- Implicit model for SARS-CoV-2 `\(R\)`:  
+
+    `$$R_{t} \sim {age}_{t}$$`   
+
+- Does age &lt;u&gt;mediate&lt;/u&gt; SARS-CoV-2 spread?  
+  
+- What is the evidence for differences in individual viral load/shedding?  
+  
+- What is the evidence for an impact of age distribution on transmission events?  
+  
+]
+
+.pull-right[
+
+<div id="htmlwidget-e16b89576cc20085b2c6" style="width:400px;height:504px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e16b89576cc20085b2c6">{"x":{"diagram":"digraph {\n\ngraph [layout = \"neato\",\n       outputorder = \"edgesfirst\",\n       bgcolor = \"white\"]\n\nnode [fontname = \"Helvetica\",\n      fontsize = \"10\",\n      shape = \"circle\",\n      fixedsize = \"true\",\n      width = \"0.5\",\n      style = \"filled\",\n      fillcolor = \"aliceblue\",\n      color = \"gray70\",\n      fontcolor = \"gray50\"]\n\nedge [fontname = \"Helvetica\",\n     fontsize = \"8\",\n     len = \"1.5\",\n     color = \"gray80\",\n     arrowsize = \"0.5\"]\n\n  \"1\" [label = \"SARS-CoV-2\nToday\", color = \"black\", fontsize = \"5\", fontcolor = \"black\", fillcolor = \"#FFFFFF\", pos = \"-0.5,0.5!\"] \n  \"2\" [label = \"% Kids\", color = \"black\", fontsize = \"5\", fontcolor = \"black\", fillcolor = \"#FFFFFF\", pos = \"0,0!\"] \n  \"3\" [label = \"SARS-CoV-2\nTomorrow\", color = \"black\", fontsize = \"5\", fontcolor = \"black\", fillcolor = \"#FFFFFF\", pos = \"0.5,-0.5!\"] \n\"1\"->\"2\" [color = \"black\"] \n\"2\"->\"3\" [color = \"black\"] \n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+
+
+]
+
+
+---
+
+## Models for SARS-CoV-2 Spread        
+
+.pull-left[
+  
+- Implicit model for SARS-CoV-2 `\(R\)`:  
+
+    `$$R_{t} \sim {age}_{t}$$`   
+
+- Does age &lt;u&gt;mediate&lt;/u&gt; SARS-CoV-2 spread?  
+  
+- What is the evidence for differences in individual viral load/shedding?  
+  
+- What is the evidence for an impact of age distribution on transmission events?  
+  
+  
+]
+
+.pull-right[
+
+<div id="htmlwidget-9e295c1bd99a09bc6ec3" style="width:400px;height:504px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9e295c1bd99a09bc6ec3">{"x":{"diagram":"digraph {\n\ngraph [layout = \"neato\",\n       outputorder = \"edgesfirst\",\n       bgcolor = \"white\"]\n\nnode [fontname = \"Helvetica\",\n      fontsize = \"10\",\n      shape = \"circle\",\n      fixedsize = \"true\",\n      width = \"0.5\",\n      style = \"filled\",\n      fillcolor = \"aliceblue\",\n      color = \"gray70\",\n      fontcolor = \"gray50\"]\n\nedge [fontname = \"Helvetica\",\n     fontsize = \"8\",\n     len = \"1.5\",\n     color = \"gray80\",\n     arrowsize = \"0.5\"]\n\n  \"1\" [label = \"SARS-CoV-2\nToday\", color = \"black\", fontsize = \"5\", fontcolor = \"black\", fillcolor = \"#FFFFFF\", pos = \"-0.5,0.5!\"] \n  \"2\" [label = \"% Kids\", color = \"black\", fontsize = \"5\", fontcolor = \"black\", fillcolor = \"#FF7F50\", pos = \"0,0!\"] \n  \"3\" [label = \"SARS-CoV-2\nTomorrow\", color = \"black\", fontsize = \"5\", fontcolor = \"black\", fillcolor = \"#E0FFFF\", pos = \"0.5,-0.5!\"] \n\"1\"->\"2\" [color = \"black\"] \n\"2\"->\"3\" [color = \"black\"] \n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+
+
+]
+
+
+---
+
+## Models for SARS-CoV-2 Spread        
+
+.pull-left[
+  
+- Implicit model for SARS-CoV-2 `\(R\)`:  
+
+    `$$R_{t} \sim {age}_{t}$$`   
+
+- Does age &lt;u&gt;mediate&lt;/u&gt; SARS-CoV-2 spread?  
+  
+- What is the evidence for differences in individual viral load/shedding?  
+  
+- What is the evidence for an impact of age distribution on transmission events?  
+  
+  
+]
+
+.pull-right[
+
+<div id="htmlwidget-66fe2bbe07bc59c25f96" style="width:400px;height:504px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-66fe2bbe07bc59c25f96">{"x":{"diagram":"digraph {\n\ngraph [layout = \"neato\",\n       outputorder = \"edgesfirst\",\n       bgcolor = \"white\"]\n\nnode [fontname = \"Helvetica\",\n      fontsize = \"10\",\n      shape = \"circle\",\n      fixedsize = \"true\",\n      width = \"0.5\",\n      style = \"filled\",\n      fillcolor = \"aliceblue\",\n      color = \"gray70\",\n      fontcolor = \"gray50\"]\n\nedge [fontname = \"Helvetica\",\n     fontsize = \"8\",\n     len = \"1.5\",\n     color = \"gray80\",\n     arrowsize = \"0.5\"]\n\n  \"1\" [label = \"SARS-CoV-2\nToday\", color = \"black\", fontsize = \"5\", fontcolor = \"black\", fillcolor = \"#FFFFFF\", pos = \"-0.5,0.5!\"] \n  \"2\" [label = \"% Kids\", color = \"black\", fontsize = \"5\", fontcolor = \"black\", fillcolor = \"#E0FFFF\", pos = \"0,0!\"] \n  \"3\" [label = \"SARS-CoV-2\nTomorrow\", color = \"black\", fontsize = \"5\", fontcolor = \"black\", fillcolor = \"#FF7F50\", pos = \"0.5,-0.5!\"] \n\"1\"->\"2\" [color = \"black\"] \n\"2\"->\"3\" [color = \"black\"] \n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+
+
+]
+
+
+---
+
+##Models for SARS-CoV-2 Spread        
+
+.pull-left[
+  
+- Alternative model for SARS-CoV-2 `\(R\)`:  
+
+    `$$R_{t} \sim {community\ mobility}_{t}$$`   
+  
+    `$${community\ mobility}_{t} \sim {school\ policy}_{t}$$`  
+  
+- Differences observed across age groups reflect differences in community mobility, which are impacted by school policy.
+  
+]
+
+.pull-right[
+
+<div id="htmlwidget-23442884e26c763de2d6" style="width:400px;height:504px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-23442884e26c763de2d6">{"x":{"diagram":"digraph {\n\ngraph [layout = \"neato\",\n       outputorder = \"edgesfirst\",\n       bgcolor = \"white\"]\n\nnode [fontname = \"Helvetica\",\n      fontsize = \"10\",\n      shape = \"circle\",\n      fixedsize = \"true\",\n      width = \"0.5\",\n      style = \"filled\",\n      fillcolor = \"aliceblue\",\n      color = \"gray70\",\n      fontcolor = \"gray50\"]\n\nedge [fontname = \"Helvetica\",\n     fontsize = \"8\",\n     len = \"1.5\",\n     color = \"gray80\",\n     arrowsize = \"0.5\"]\n\n  \"1\" [label = \"SARS-CoV-2\nToday\", color = \"black\", fontsize = \"5\", fontcolor = \"black\", fillcolor = \"#FFFFFF\", pos = \"-0.5,0.5!\"] \n  \"2\" [label = \"Community\nMobility\", color = \"black\", fontsize = \"5\", fontcolor = \"black\", fillcolor = \"#FFFFFF\", pos = \"0,0!\"] \n  \"3\" [label = \"SARS-CoV-2\nTomorrow\", color = \"black\", fontsize = \"5\", fontcolor = \"black\", fillcolor = \"#FFFFFF\", pos = \"0.5,-0.5!\"] \n  \"4\" [label = \"School\nPolicy\", color = \"black\", fontsize = \"5\", fontcolor = \"black\", fillcolor = \"#FFFFFF\", pos = \"0.5,0.5!\"] \n\"1\"->\"2\" [color = \"black\"] \n\"2\"->\"3\" [color = \"black\"] \n\"4\"->\"2\" [color = \"black\"] \n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+
+
+]
+
+
+
+
+---
+
+##Models for SARS-CoV-2 Spread        
+
+.pull-left[
+  
+- Alternative model for SARS-CoV-2 `\(R\)`:  
+
+    `$$R_{t} \sim {community\ mobility}_{t}$$`   
+  
+    `$${community\ mobility}_{t} \sim {school\ policy}_{t}$$`   
+  
+- Differences observed across age groups reflect differences in community mobility, which are impacted by school policy.
+  
+]
+
+.pull-right[
+
+<div id="htmlwidget-b1b3b8f13abaf7c9e3fa" style="width:400px;height:504px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b1b3b8f13abaf7c9e3fa">{"x":{"diagram":"digraph {\n\ngraph [layout = \"neato\",\n       outputorder = \"edgesfirst\",\n       bgcolor = \"white\"]\n\nnode [fontname = \"Helvetica\",\n      fontsize = \"10\",\n      shape = \"circle\",\n      fixedsize = \"true\",\n      width = \"0.5\",\n      style = \"filled\",\n      fillcolor = \"aliceblue\",\n      color = \"gray70\",\n      fontcolor = \"gray50\"]\n\nedge [fontname = \"Helvetica\",\n     fontsize = \"8\",\n     len = \"1.5\",\n     color = \"gray80\",\n     arrowsize = \"0.5\"]\n\n  \"1\" [label = \"SARS-CoV-2\nToday\", color = \"black\", fontsize = \"5\", fontcolor = \"black\", fillcolor = \"#FFFFFF\", pos = \"-0.5,0.5!\"] \n  \"2\" [label = \"Community\nMobility\", color = \"black\", fontsize = \"5\", fontcolor = \"black\", fillcolor = \"#E0FFFF\", pos = \"0,0!\"] \n  \"3\" [label = \"SARS-CoV-2\nTomorrow\", color = \"black\", fontsize = \"5\", fontcolor = \"black\", fillcolor = \"#E0FFFF\", pos = \"0.5,-0.5!\"] \n  \"4\" [label = \"School\nPolicy\", color = \"black\", fontsize = \"5\", fontcolor = \"black\", fillcolor = \"#FF7F50\", pos = \"0.5,0.5!\"] \n\"1\"->\"2\" [color = \"black\"] \n\"2\"->\"3\" [color = \"black\"] \n\"4\"->\"2\" [color = \"black\"] \n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+
+
+]
+
+
+
+
+---
+
+##Models for SARS-CoV-2 Spread        
+
+.pull-left[
+  
+- Alternative model for SARS-CoV-2 `\(R\)`:  
+
+    `$$R_{t} \sim {community\ mobility}_{t}$$`   
+  
+    `$${community\ mobility}_{t} \sim {school\ policy}_{t}$$`   
+  
+- Differences observed across age groups reflect differences in community mobility, which are impacted by school policy.
+  
+]
+
+.pull-right[
+
+<div id="htmlwidget-3edcd7f78d363ace8189" style="width:400px;height:504px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3edcd7f78d363ace8189">{"x":{"diagram":"digraph {\n\ngraph [layout = \"neato\",\n       outputorder = \"edgesfirst\",\n       bgcolor = \"white\"]\n\nnode [fontname = \"Helvetica\",\n      fontsize = \"10\",\n      shape = \"circle\",\n      fixedsize = \"true\",\n      width = \"0.5\",\n      style = \"filled\",\n      fillcolor = \"aliceblue\",\n      color = \"gray70\",\n      fontcolor = \"gray50\"]\n\nedge [fontname = \"Helvetica\",\n     fontsize = \"8\",\n     len = \"1.5\",\n     color = \"gray80\",\n     arrowsize = \"0.5\"]\n\n  \"1\" [label = \"SARS-CoV-2\nToday\", color = \"black\", fontsize = \"5\", fontcolor = \"black\", fillcolor = \"#FFFFFF\", pos = \"-0.5,0.5!\"] \n  \"2\" [label = \"Community\nMobility\", color = \"black\", fontsize = \"5\", fontcolor = \"black\", fillcolor = \"#FF7F50\", pos = \"0,0!\"] \n  \"3\" [label = \"SARS-CoV-2\nTomorrow\", color = \"black\", fontsize = \"5\", fontcolor = \"black\", fillcolor = \"#FF7F50\", pos = \"0.5,-0.5!\"] \n  \"4\" [label = \"School\nPolicy\", color = \"black\", fontsize = \"5\", fontcolor = \"black\", fillcolor = \"#E0FFFF\", pos = \"0.5,0.5!\"] \n\"1\"->\"2\" [color = \"black\"] \n\"2\"->\"3\" [color = \"black\"] \n\"4\"->\"2\" [color = \"black\"] \n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+
+
+]
+
+
+
+---
+
+## Measurement Challenge ⇾ Model Parameters  
+  
+.pad-left[
+
+- Monod M et al. Age groups that sustain resurging COVID-19 epidemics in the United States. _Science_. 2021 Feb 2; PMID: 33531384  
+
+    - "at least 65 of 100 COVID-19 infections originate from individuals aged 20-49"
+
+    - Foursquare social mobility data: not available for 0-19 years  
+    
+    - COVID-19 infections underreported in pediatric population
+    
+    - "school opening is associated with an estimated 25.7% [14.5%-40.5%] increase of COVID-19 infections and a 5.9% [3.4%-9.3%] increase in COVID-19 attributable deaths"
+    
+    - **significantly greater if pediatric case numbers substantially underreported**  
+
+]
+
+---
+exclude: true
+layout: false
+class: full-screen hide-count
+
+&lt;div class="grid-3-1"&gt;
+&lt;div class="extension-tile gridset-a animated flipInX"&gt;&lt;div&gt;Tönshoff B&lt;br&gt;et al&lt;br&gt;Findings&lt;/div&gt;&lt;/div&gt;
+&lt;div class="extension-tile gridset-b animated flipInY"&gt;&lt;div&gt;Parallel&lt;br&gt;Studies&lt;/div&gt;&lt;/div&gt;
+&lt;div class="extension-tile gridset-c animated flipInX"&gt;&lt;div&gt;What Causes&lt;br&gt;SARS-CoV-2&lt;br&gt;Spread?&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+---
+class: middle center hide-count
+background-image: url(img/sarscov2_cdc_blur.png)
+background-size: cover
+
+# &lt;span style='color:white'&gt;Questions?&lt;/span&gt;
+
+ &lt;!-- .callout-url-bottom[  
+.fade-in[&lt;span style="font-size:0.5em; color:white"&gt;slides ↓ &lt;/span&gt;]  
+&lt;span style="link-color:white"&gt;[bjklab.org](http://www.bjklab.org)&lt;/span&gt;  
+] --&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="libs/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "%current%"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
